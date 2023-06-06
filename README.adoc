@@ -1,0 +1,82 @@
+# befriedigend
+== Begriffe
+
+[loweralpha]
+. *docker compose*
+
+.. Service: definiert einen Container, der eine bestimmte Rolle innerhalb einer Anwendung oder Infrastruktur spielt.
+Jeder Service hat einen Namen und wird durch eine Abbildung definiert. (bsp.: Web-Server-Container führt eine Anwendung aus)
+
+
+.. Network: ist eine Gruppe von Containern, die miteinander kommunizieren können.
+(bsp.: für eine Datenbank, auf das nur bestimmte Container zugreifen können)
+
+
+.. Build: definiert, wie ein Docker-Image gebaut wird. Hier wird ein Dockerfile verwendet
+
+.. Restart Policy: gibt an, was passieren soll, wenn ein Container abstürzt. Es gibt verschiedene Optionen (bsp.: "always")
+
+.. Volumes: Volumes in Docker Compose sind eine Möglichkeit, Daten zwischen Containern oder zwischen Containern und Host-Systemen zu teilen.
+Man kann auch Daten zwischen Builds oder Deploys damit speichern.
+
+
+. *Scrum:*
+[arabic]
+ .. Epic: ist eine große, komplexe Anforderung, die in kleinere User Stories unterteilt. Es wird unterteil in Anforderung -> Epic -> Story -> Task
+
+    .. User Story: Eine User Story beschreibt eine Anforderung oder Funktion aus der Sicht des Benutzers.
+    User Stories sind kurz und prägnant  und einen Mehrwert für den Benutzer liefern.
+    Ein Beispiel für eine User Story könnte lauten:
+    "Als Benutzer möchte ich Produkte nach Kategorie filtern können, um schneller das gewünschte Produkt zu finden". (WHO, WHAT, WHY)!
+
+
+.. Acceptance Criteria: Akzeptanzkriterien sind Kriterien, die erfüllt sein müssen, damit eine User Story als abgeschlossen betrachtet werden kann.
+
+.. Definition of Done: definiert die Kriterien, die erfüllt sein müssen, damit ein Sprint abgeschlossen werden kann.
+    Bsp.: "Alle User Stories müssen getestet, dokumentiert und abgeschlossen sein".
+
+.. Sprint Burndown Chart: ist ein Diagramm, das den Fortschritt des Teams während eines Sprints visualisiert.
+    zeigt wie viel Arbeit noch übrig ist und die Zeit
+
+
+. *SemVer vs CalVer:*
+Sind Systeme zur numerischen Versionierung von einer Software welche sich auf Änderungen bezieht.
+
+* Semantische Versionierung:
+es gibt 3 Ziffern welche erhöt werden: MAJOR.MINOR.PATCH.
+
+** MAJOR-Version: inkompatible api Änderung
+** MINOR-Version:  neue funktionfähige Funktionen
+** PATCH-Version: API-kompatible Bugfixes
+
+* Calendar Versionierung:
+basiert auf dem Datum der Veröffentlichung
+
+** Form: JJJJ.MM.TT
+
+
+
+== LeetSpeak
+http://localhost:8080/hello/decode/1N73LL1G3NC3%2015%207H3%204B1L17Y%207O%204D4P7%207O%20CH4NG3.%20-%20573PH3N%20H4WK1NG
+
+=== Tests
+Testziele:
+Sicherstellen, dass der LeetSpeak -Encoder/-Decoder korrekt funktioniert, indem er den eingegebenen Text in LeetSpeak umwandelt.
+
+* User Stories (Use-Case)
+* Grenzwertanalyse
+* Äquivalenzklaassen (Grenzen einer Klasse)
+* Exceptions Testen
+
+Unit-Tests:
+
+* Testen, dass encode("a") korrekt "4" zurückgibt.
+* Testen, dass encode("E") korrekt "3" zurückgibt.
+
+* Testen, dass encode("") korrekt "" zurückgibt. (Randbedingung)
+* Testen, dass encode(null) eine NullPointerException auslöst.
+
+Integrationstests:
+
+* Testen, dass decode(encode("Hello World!")) korrekt "HELLO WORLD!" zurückgibt.
+
