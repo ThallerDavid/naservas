@@ -80,3 +80,28 @@ Integrationstests:
 
 * Testen, dass decode(encode("Hello World!")) korrekt "HELLO WORLD!" zurückgibt.
 
+= Pflichtenheft
+=== Ausgangssituation
+Standorte, Unternehmensart, Produktpalette, Dienstleistungspalette, Kundenstruktur, Überblick IT-Organisation
+z.B.: Die HTL Leonding ist eine HTL im oö. Zentralraum mit ca. 1000 Schülern und den Fachabteilungen Medientechnik, Informatik, …
+
+=== Problemstellung
+z.B.: Diese Excel Liste führt zu dem Problem, dass es nicht 100% einsichtig ist, wer zum aktuellen Zeitpunkt welches Gerat hat, und wer es bereits zurückgebracht hat.
+
+=== Ist-Zustand
+Projekt relevante Bereiche
+z.B.: Die HTL Leonding verwendet für das Management der Videokameras eine Excel Liste auf Microsoft Teams.
+
+=== Zielsetzung
+Ziele (Prozesse, Termine, Systemziele, Kosteneinsparungen, Verbesserung der Effizienz, Aspekte)
+
+=== Aufgabenstellung
+
+
+=== Mengengerüst 
+Tabelle
+
+===  Rahmenbedingung
+
+	
+
